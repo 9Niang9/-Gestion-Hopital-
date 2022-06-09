@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<title>Hopitale</title>
+	<meta charset="utf-8">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+            
+	<style>
+		label 
+		{
+			width: 40%;
+			display: inline-block;
+			text-align: left;
+		}
+        body
+		{
+			width: 50%;
+			font-family:arial;
+			margin: 5px auto;
+			background:#f4f7f8;
+			padding: 20px;
+			color: #1abc30;
+		}
+		fieldset
+		{
+            border-radius:8px;
+		}
+		legend
+		{
+            font-size:1.4em;
+			margin-bottom: 10px;
+		}
+		input[type="text"],input[type=password],input[type=email]
+		{
+			border-radius:15px;
+			padding:10px;
+			width:190px;
+			background-color: #ffff;
+			margin:10px;
+		}
+       input[type="submit"]
+	   {
+		   position:relative;
+		   border: 1px solid #16a085;
+		   padding:10px;
+		   font-size: 18px;
+		   border-radius:12px;
+		   width:120px;
+		   font-style:bold;
+		   margin-top:18px;
+		   margin-right:70px;
+		   color:rgb(26, 25, 25);
+           background-color: rgb(41, 248, 41);
+		   margin-left:100px;
+	   }
+	   input[type="reset"]
+	   {
+		   position:relative;
+		   border: 1px solid #16a085;
+		   padding:10px;
+		   font-size: 18px;
+		   border-radius:12px;
+		   width:120px;
+		   font-style:bold;
+		   margin-top:18px;
+		   color:rgb(19, 18, 18);
+		   background-color:rgb(224, 51, 51);
+		   margin-left:100px;
+	   }
+	</style>	
+</head>
+<body >
+	<h1>
+		<!--gros titre-->
+		<marquee behavior="altrenate" direction="left" scrollamont="5" >!!You are welcome on the Hopital form!!</marquee>
+	</h1>
+<form method="POST" action="Hopitale.php"><!--liason avec Hopitale.php avec la methode POST -->
+	<fieldset>
+	 <legend>Inscription</legend> 
+		<label>Nom</label><input type="text" name="nom" placeholder="votre Nom ici !"/> <br>
+		<label>Prenom</label><input type="text" name="prenom" placeholder="votre PRENOM ici !"/> <br>
+		<label>Mot de passe</label><input type="password" placeholder="entrer mot de passe !" name="password"/> <br>
+		<label>Confirmer mot de passe</label><input type="password" placeholder="confirmer mot de passe !" name="password_confirmation"/> <br>
+		<label>Email</label><input type="email" name="email" placeholder="votre mail ici !"/> <br>
+	
+		<input type="submit" value="Valider"/>
+		<input type="reset" value="Supprimer"/>
+	</fieldset>
+</form>
+
+</html>
